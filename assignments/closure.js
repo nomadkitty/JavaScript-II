@@ -1,6 +1,16 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+const x = 5; 
+  function add() {
+    let y = 6;
+      function nested (){
+        let z = 7;
+        return x + y + z;
+      }
+    return nested();
+  }
 
+console.log(add());
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
