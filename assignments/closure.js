@@ -1,6 +1,16 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+const x = 5; 
+  function add() {
+    let y = 6;
+      function nested (){
+        let z = 7;
+        return x + y + z;
+      }
+    return nested();
+  }
 
+console.log(add());
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
@@ -8,7 +18,17 @@
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
   // Return a function that when invoked increments and returns a counter variable.
+  let i = 0;  //set a local variable
+  function add (){   //have a function name add
+    i++;  //add should return i++
+  }
+ add(); 
+ return i; 
 };
+const newCounter = console.log(counter());
+newCounter;
+newCounter
+
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
 // newCounter(); // 2
