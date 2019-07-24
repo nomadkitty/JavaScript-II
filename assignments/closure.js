@@ -18,7 +18,17 @@ console.log(add());
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
   // Return a function that when invoked increments and returns a counter variable.
+  let i = 0;  //set a local variable
+  function add (){   //have a function name add
+    i++;  //add should return i++
+  }
+ add(); 
+ return i; 
 };
+const newCounter = console.log(counter());
+newCounter;
+newCounter
+
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
 // newCounter(); // 2
